@@ -1,0 +1,24 @@
+[
+    {
+          "id": 1,
+          "price": 30,
+          "productDescription": "some description about product",
+          "productImage": "png",
+          "productName": "abc"
+    },
+    {
+          "id": 2,
+          "price": 40,
+          "productDescription": "some description about product",
+          "productImage": "png",
+          "productName": "def"
+    },
+    {
+          "id": 3,
+          "price": 49.5,
+          "productDescription": "some description about product",
+          "productImage": "png",
+          "productName": "ghi"
+
+    }
+]
