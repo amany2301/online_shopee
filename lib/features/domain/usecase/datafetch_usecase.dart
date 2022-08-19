@@ -27,12 +27,5 @@ class FetchDataImpl implements FetchDataUseCase {
 
    return _repository.fetchData();
 
-   // return _repository.updateProduct();
   }
-
-  // Future<dynamic> execute(){
-  //
-  //   return homeRepo().fetchData();
-  // }
-
 }

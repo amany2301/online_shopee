@@ -9,9 +9,6 @@ import '../controllers/shopping_controller.dart';
 class ShoppingPage extends StatelessWidget {
 
     final shoppingController = Get.find<ShoppingController>();
-  //final shoppingController = Get.put(ShoppingController());
-   // final cartController = Get.put(CartController());
-
     final cartController = Get.find<CartController>();
 
   @override

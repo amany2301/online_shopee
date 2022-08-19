@@ -7,13 +7,10 @@ class ShoppingController extends GetxController with StateMixin<RxList<Product>>
 
    final FetchDataUseCase _fetchUseCase;
    List products = [].obs;
-   
+
   ShoppingController({
      FetchDataUseCase fetchDataUseCase,
 }): _fetchUseCase =  fetchDataUseCase;
-
-
-   // late Product _selectedProduct;
 
 
   @override
@@ -22,7 +19,7 @@ class ShoppingController extends GetxController with StateMixin<RxList<Product>>
     super.onInit();
 
      fetchProducts();
-    // getProductList();
+
   }
 
    // void getProductList() async {

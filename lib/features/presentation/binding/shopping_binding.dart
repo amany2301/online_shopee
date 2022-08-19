@@ -11,9 +11,9 @@ class ShoppingBinding extends Bindings {
   @override
 
     void dependencies() {
-      // Get.lazyPut<ShoppingController>(() => ShoppingController(fetchDataUseCase: Get.find()));
 
-      Get.put<ShoppingController>(ShoppingController());
+    Get.lazyPut<ShoppingController>(() => ShoppingController(fetchDataUseCase: Get.find()));
+      // Get.put<ShoppingController>(ShoppingController());
     }
 
 }
