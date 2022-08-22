@@ -30,12 +30,12 @@ class FetchDataImpl implements FetchDataUseCase {
   }
 }
 
-class GetExamsListResult extends UseCaseResult {
+class GetProductsListResult extends UseCaseResult {
   final List<Product> productList;
   final String errCode;
   final Exception exe;
 
-  GetExamsListResult({
+  GetProductsListResult({
     this.productList,
     this.errCode,
     this.exe,

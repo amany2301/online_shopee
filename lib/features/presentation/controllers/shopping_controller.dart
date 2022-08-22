@@ -12,8 +12,8 @@ class ShoppingController extends GetxController with StateMixin<RxList<Product>>
      FetchDataUseCase fetchDataUseCase,
 }): _fetchUseCase =  fetchDataUseCase;
 
-   var productList = <Product>[];
-   var lastPos = -1.obs;
+   // var productList = <Product>[];
+   // var lastPos = -1.obs;
 
 
 
