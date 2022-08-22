@@ -12,28 +12,32 @@ class ShoppingController extends GetxController with StateMixin<RxList<Product>>
      FetchDataUseCase fetchDataUseCase,
 }): _fetchUseCase =  fetchDataUseCase;
 
+   var productList = <Product>[];
+   var lastPos = -1.obs;
+
+
 
   @override
   void onInit()
   {
     super.onInit();
-    // getProductList();
-     fetchProducts();
+    //getProductList();
+    fetchProducts();
 
   }
 
    // void getProductList() async {
-   //   change(products, status: RxStatus.loading());
-   //   final _result = await _fetchUseCase.execute();
+   //   change(productList, status: RxStatus.loading());
+   //   final _result = await _fetchUseCase.getData();
    //   if (_result.isSuccess) {
-   //     products = _result.
-   //     if (products.isNotEmpty) {
-   //       change(products, status: RxStatus.success());
+   //     productList = _result.productList;
+   //     if (productList.isNotEmpty) {
+   //       change(productList, status: RxStatus.success());
    //     } else {
-   //       change(products, status: RxStatus.empty());
+   //       change(productList, status: RxStatus.empty());
    //     }
    //   } else {
-   //     change(products, status: RxStatus.error());
+   //     change(productList, status: RxStatus.error());
    //   }
    // }
 
