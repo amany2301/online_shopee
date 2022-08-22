@@ -17,7 +17,7 @@ class ShoppingController extends GetxController with StateMixin<RxList<Product>>
   void onInit()
   {
     super.onInit();
-
+    // getProductList();
      fetchProducts();
 
   }
