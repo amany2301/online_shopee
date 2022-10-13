@@ -14,6 +14,4 @@ class Product {
     this.productDescription,
     this.price,
   });
-
-
 }

@@ -51,13 +51,17 @@ class ShoppingPage extends StatelessWidget {
                                       style: TextStyle(fontSize: 24)),
                                 ],
                               ),
-                              RaisedButton(
+                              ElevatedButton(
                                 onPressed: () {
                                   cartController
                                       .addToCart(shoppingController.products[index]);
                                 },
-                                color: Colors.blue,
-                                textColor: Colors.white,
+                                style: ElevatedButton.styleFrom(
+                                  primary: Colors.blue, // background
+                                  onPrimary: Colors.yellow, // foreground
+                                ),
+                                //color: Colors.blue,
+                                //textColor: Colors.white,
                                 child: Text('Add to Cart'),
                               ),
                             /*
@@ -94,7 +98,9 @@ class ShoppingPage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed('/CartPage');
+        },
         backgroundColor: Colors.amber,
         icon: Icon(
           Icons.add_shopping_cart_rounded,

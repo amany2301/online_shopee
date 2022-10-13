@@ -15,15 +15,12 @@ class ShoppingController extends GetxController with StateMixin<RxList<Product>>
    // var productList = <Product>[];
    // var lastPos = -1.obs;
 
-
-
   @override
   void onInit()
   {
     super.onInit();
     //getProductList();
     fetchProducts();
-
   }
 
    // void getProductList() async {

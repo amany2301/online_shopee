@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:online_shopee/features/data/di/data_binding.dart';
 import 'package:online_shopee/features/domain/di/product_repository_binding.dart';
 import 'package:online_shopee/features/presentation/binding/cart_binding.dart';
+import 'package:online_shopee/features/presentation/views/cart_page/cart_page.dart';
 //import 'package:online_shopee/controllers/shopping_binding.dart';
 //import 'package:online_shopee/views/shopping_page.dart';
 
@@ -28,6 +29,11 @@ class MyApp extends StatelessWidget {
             name: '/',
             page: () => ShoppingPage(),
             bindings:[ShoppingBinding(),cart_binding(),ProductDataBinding(),ProductRepositoryBinding()],
+          ),
+          GetPage(
+              name: '/CartPage',
+              page: () => CartPage(),
+              //bindings:
           ),
         ],
     );
